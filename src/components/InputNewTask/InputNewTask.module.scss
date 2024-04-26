@@ -1,0 +1,61 @@
+.inputNewTask {
+    width: 100%;
+    height: 80px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    @media screen and (max-width: 600px) {
+        height: 60px;
+        border-radius: 0px;
+    }
+    .inputNewTask__input {
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        height: 100%;
+        width: 70%;
+        font-size: 16px;
+        padding: 20px 30px;
+        &::placeholder {
+            color: #999999;
+        }
+    }
+    .inputNewTask__btn {
+        width: 100px;
+        height: 60px;
+        background: #4165ff;
+        font-size: 18px;
+        margin-right: 10px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        &:hover {
+            cursor: pointer;
+            background: #2a50ed;
+        }
+        @media screen and (max-width: 600px) {
+            height: 45px;
+            width: 70px;
+            border-radius: 16px;
+            font-size: 16px;
+        }
+    }
+}
+.error {
+    color: red;
+    margin-top: 10px;
+}
+.inputNewTask_container {
+    width: 100%;
+    @media screen and (max-width: 900px) {
+        padding: 0px 40px;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 0px;
+    }
+}

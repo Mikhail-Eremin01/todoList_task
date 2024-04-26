@@ -1,0 +1,39 @@
+@import "../../ScssVariables.module.scss";
+.header {
+    @extend %header;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 30px;
+    gap: 20px;
+    @media screen and (max-width: 1000px) {
+        padding: 0 30px;
+    }
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+    .header_toggleTodos {
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        @media screen and (max-width: 600px) {
+            font-size: 16px;
+        }
+    }
+    .header__logo {
+        width: 175px;
+        height: 32px;
+        @media screen and (max-width: 1000px) {
+            width: 145px;
+            height: 30px;
+        }
+    }
+}
